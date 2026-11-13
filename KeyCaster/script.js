@@ -1,7 +1,13 @@
 let text = document.querySelector("h1");
 let newText;
 
-window.addEventListener("keydown", function(key){
+window.addEventListener("keydown", function (key) {
     newText = key.key;
-    text.innerText = newText;
+    console.log(key);
+    if (newText === " ") {
+        text.innerText = "SPACE";
+    }
+    else {
+        text.innerText = newText;
+    }
 })
