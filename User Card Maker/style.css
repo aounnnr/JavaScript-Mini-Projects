@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: gray;
+}
+
+#form {
+    background-color: white;
+    padding: 5rem;
+    border-radius: 12px;
+    display: inline-block;
+    margin-left: 78vh;
+    margin-top: 10vh;
+}
+
+#form input {
+    margin-bottom: 20px;
+    margin-top: 6px;
+    border-radius: 4px;
+    padding: 6px;
+    border: 1px solid rgb(210, 202, 202);
+    width: 250px;
+}
+
+#form #btn {
+    padding: 8px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(112, 26, 203);
+    color: rgb(255, 248, 248);
+    width: 100px;
+}
+
+#form #btn:hover {
+    background-color: black;
+    color: white;
+}
+
+#user_card {
+    background-color: white;
+    padding: 5rem;
+    border-radius: 12px;
+    display: none;
+    margin-left: 78vh;
+    margin-top: 10vh;
+    width: 410px;
+}
+
+#user_card .icon {
+    background-color: rgb(23, 170, 211);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#user_card .icon,.name-2,.e-mail-2,.age-2 {
+    margin-bottom: 10px;
+}
+
+#user_card #_name {
+    font-weight: 200;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#user_card #_email {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+#user_card #_age {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+#user_card #_bio {
+    font-weight: 100;
+    font-size: 15px;
+}
