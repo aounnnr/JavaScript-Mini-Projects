@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            background: #0f1117;
+            font-family: sans-serif;
+            color: #e8eaf0;
+        }
+
+        .card {
+            width: 400px;
+            padding: 24px;
+            background: #181b24;
+            border: 1px solid #262a36;
+            border-radius: 16px;
+        }
+
+        .title {
+            font-weight: bold;
+        }
+
+        .bar {
+            margin-top: 20px;
+            height: 10px;
+            background: #262a36;
+            border-radius: 99px;
+            overflow: hidden;
+        }
+
+        .fill {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, #5b8cff, #8a5bff);
+        }
+
+        .row {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #8a90a2;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+            user-select: none;
+            font-weight: bold;
+            background: linear-gradient(90deg, #5b8cff, #8a5bff);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="title">Downloading...</div>
+
+        <div class="bar">
+            <div class="fill"></div>
+        </div>
+
+        <div class="row">
+            <span class="per">0%</span>
+        </div>
+
+        <div class="btn">Download</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+</body>
+</html>
