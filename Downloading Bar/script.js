@@ -9,6 +9,7 @@ document.querySelector(".btn").addEventListener("click", function () {
             }
             else {
                 clearInterval(tl);
+                document.querySelector(".title").textContent = "Downloaded...";
             }
         }
     }, 100);
