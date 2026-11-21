@@ -1,19 +1,13 @@
-let theme;
-const body = document.querySelector("body");
-let pref = localStorage.getItem("prefer");
-
-
-document.querySelector("body").classList.add(pref || "light");
-
+const body = document.body;
+body.classList.add(localStorage.getItem("prefer") || "light");
 
 document.querySelector("button").addEventListener("click", function () {
-    if (document.querySelector("body").classList.contains("light")) {
-        body.classList.replace("light", "dark");
-        theme = "dark";
+    const isDark = body.classList.toggle("dark");
+    body.classList.toggle("light", !isDark);
+
+    if (isDark) {
+        localStorage.setItem("prefer", "dark");
+    } else {
+        localStorage.setItem("prefer", "light");
     }
-    else {
-        body.classList.replace("dark", "light");
-        theme = "light";
-    }
-    localStorage.setItem("prefer", theme);
 });
