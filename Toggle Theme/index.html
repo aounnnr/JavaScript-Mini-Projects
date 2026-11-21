@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .container {
+            text-align: center;
+        }
+
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+
+        body.light {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        body.light button {
+            background-color: #999999;
+            color: #ffffff;
+        }
+
+
+        body.dark {
+            background-color: #222222;
+            color: #ffffff;
+        }
+
+        body.dark button {
+            background-color: #555555;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body class="light">
+
+    <div class="container">
+        <h1>Theme Preference</h1>
+        <button>Toggle Theme</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
