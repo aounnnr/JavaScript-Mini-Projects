@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.645);
+}
+
+.info-1 h1 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.info-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+#search {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.673);
+    border-radius: 20px;
+    border: 1px solid;
+    width: 250px
+}
+
+#search {
+    color: white;
+    border-color: rgba(128, 128, 128, 0.673);
+}
+
+#search::placeholder {
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.633);
+}
+
+#search:focus::placeholder {
+    color: transparent;
+}
+
+#search:focus {
+    outline: none;
+    color: rgba(255, 255, 255, 0.633);
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.card .img {
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.card .img,
+.h1 {
+    margin-bottom: 8px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.311);
+    display: inline-block;
+    padding: 35px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.card .p {
+    font-size: 12px;
+    flex-wrap: wrap;
+    max-width: 30ch;
+}
+
+h1:not(.h1) {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    text-align: center;
+    line-height: 1.2;
+    padding: 0 16px;
+}
+
+#search {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 480px) {
+    h1:not(.h1) {
+        font-size: 1.4rem;
+    }
+}
